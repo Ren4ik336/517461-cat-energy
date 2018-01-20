@@ -22,17 +22,27 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="#">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="#">Подбор продукции</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор продукции</a></li>
         </ul>
       </div>
     </nav>
 
-    <h2 class="page-main__title">Подбор программы</h2>
-      <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="questionary" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset></fieldset>
-      </form>
+    <main class="page-main">
+      <h2 class="page-main__title">Подбор программы</h2>
+        <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="questionary" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="questionary__personal-info">
+            <label for="name">Имя:*</label>
+            <input id="name" type="text" placeholder="Барсик">
+            <label for="weight">Вес (кг):*</label>
+            <input id="weight" type="text" placeholder="7">
+            <label for="age">Возраст (лет)</label>
+            <input id="age" type="text" placeholder="7">
+          </fieldset>
+
+        </form>
+      </main>
 
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
@@ -40,7 +50,7 @@
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="page-footer__map map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
       </div>
       <h1 class="page-footer__title">Cat energy</h1>
       <div class="page-footer__social social">
