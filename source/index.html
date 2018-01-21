@@ -77,35 +77,34 @@
         </ul>
       </section>
 
-      <section class="stats">
-        <div class="stats__wrapper">
-          <h2 class="visually-hidden">Результаты до и после</h2>
-          <h3 class="stats__title">Живой пример</h3>
-          <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="stats__list">
-            <li>
-              <p class="stats__value">5 кг</p>
-              <p class="stats__value-text">снижение веса</p>
-            </li>
-            <li>
-              <p class="stats__field">60 дней</p>
-              <p class="stats__field-text">затрачено времени</p>
-            </li>
-          </ul>
-          <div class="stats__slider">
-            <img class="stats__image stats__image--before" src="http://placehold.it/311x232" width="311" height="232" alt="Кот до похудения">
-            <img class="stats__image stats__image--after" src="http://placehold.it/311x232" width="311" height="232" alt="Кот после похудения">
-            <div class="stats__control control">
-              <div class="stats__label stats__label--before">Было</div>
-              <div class="control__field">
-                <div class="control__button control__button--before"></div>
-                <div class="control__button control__button--after"></div>
-              </div>
-              <div class="stats__label stats__label--after">Стало</div>
-            </div>
+      <section class="example">
+
+      <h2 class="example__title">Живой пример</h2>
+
+      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      <ul class="stats__list">
+        <li>
+          <p class="stats__value">5 кг</p>
+          <p class="stats__value-text">снижение веса</p>
+        </li>
+        <li>
+          <p class="stats__field">60 дней</p>
+          <p class="stats__field-text">затрачено времени</p>
+        </li>
+      </ul>
+      <p class="stats__result">Затраты на питание: 15 000 руб.</p>
+      <div class="example__slider slider">
+        <img src="http://placehold.it/311x232" alt="Cat before">
+          <input name="toggle" id="toggle-1" class="slider__toggle-1" type="radio" checked>
+          <input name="toggle" id="toggle-2" class="slider__toggle-2" type="radio">
+          <div class="slider__control">
+            <p class="slider__before-text">Было</p>
+            <label for="toggle-1"></label>
+            <label for="toggle-2"></label>
+            <p class="slider__after-text">Стало</p>
           </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
     </main>
 
