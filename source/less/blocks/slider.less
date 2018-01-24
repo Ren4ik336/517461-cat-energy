@@ -1,0 +1,55 @@
+.slider{
+  width: 280px;
+}
+.slider__image-1{
+  background: url(../img/before-mobile@1x.png) no-repeat  -20px center;
+  width: 311px;
+  height: 232px;
+  margin-top: 37px;
+}
+.slider__toggle{
+  display: none;
+}
+.slider__control{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 43px;
+  margin-top: 23px;
+  padding-bottom: 20px;
+}
+.slider__text{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.slider__bar{
+  display: flex;
+  margin: auto;
+  width: 84px;
+  height: 12px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid silver;
+}
+.slider__tog{
+  margin: auto;
+  width: 35px;
+  height: 6px;
+  background-color: white;
+  border-radius: 3px;
+  &::before{
+    display: flex;
+    content: '';
+    width: 35px;
+    height: 6px;
+    background-color: @main-color;
+    border-radius: 3px;
+    transform: scale(0);
+    transition: .4s;
+    cursor: pointer;
+  }
+}
+.slider__toggle--1:checked ~ .slider__control > .slider__bar > .slider__tog--1:before,
+.slider__toggle--2:checked ~ .slider__control > .slider__bar > .slider__tog--2:before{
+  transform: scale(1);
+}
