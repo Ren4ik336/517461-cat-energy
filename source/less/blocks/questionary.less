@@ -16,7 +16,7 @@
 
     &::after {
       display: block;
-      content: '';
+      content: "";
       width: 320px;
       height: 1px;
       border-bottom: 1px solid #ededed;
@@ -32,7 +32,7 @@
 
     &::after {
       display: block;
-      content: '';
+      content: "";
       width: 320px;
       height: 1px;
       border-bottom: 1px solid #ededed;
@@ -84,7 +84,7 @@
 .questionary__mail-icon {
   position: absolute;
   display: block;
-  background: url(../img/icon-mail.svg) no-repeat center center;
+  background: url("../img/icon-mail.svg") no-repeat center center;
   width: 17px;
   height: 13px;
   left: 247px;
@@ -94,11 +94,11 @@
 .questionary__tel-icon {
   position: absolute;
   display: block;
-  background: url(../img/icon-phone.svg) no-repeat center center;
+  background: url("../img/icon-phone.svg") no-repeat center center;
   width: 20px;
   height: 20px;
   left: 247px;
-  top: 0px;
+  top: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -150,7 +150,7 @@
   position: relative;
   margin-bottom: 12px;
 
-  &::before{
+  &::before {
     position: absolute;
     display: block;
     content: '';
@@ -164,7 +164,7 @@
     left: 0;
     margin: auto;
     transform: scale(0);
-    transition: .4s;
+    transition: 0.4s;
   }
 
   .questionary__name {
@@ -175,7 +175,7 @@
   }
 }
 
-.questionary__toggle:checked + .questionary__btn:before {
+.questionary__toggle:checked + .questionary__btn::before {
   transform: scale(1);
 }
 
@@ -190,7 +190,7 @@
     padding-bottom: 30px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 99px;
       height: 3px;
@@ -204,7 +204,7 @@
     padding-top: 15px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 158px;
       height: 3px;
@@ -219,7 +219,7 @@
     padding-bottom: 34px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 136px;
       height: 3px;
@@ -241,11 +241,11 @@
   position: relative;
   margin-bottom: 12px;
 
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
-    background: url(../img/icon-tick.svg) no-repeat center center;
+    background: url("../img/icon-tick.svg") no-repeat center center;
     width: 21px;
     height: 16px;
     top: 0;
