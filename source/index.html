@@ -4,20 +4,19 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Кэт энерджи" class="page-header__logo-image">
+        <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" class="page-header__logo-image">
+        <img src="img/logo-mobile-header.svg" width="101" height="18" alt="logo" class="page-header__logo-text">
       </a>
-      <h1 class="page-header__title">Cat energy</h1>
-    </header>
-    <nav class="main-nav">
+      <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        Открыть меню
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -27,22 +26,21 @@
         </ul>
       </div>
     </nav>
+    </header>
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">
-        Питание для котов
-      </h1>
+      <h1 class="visually-hidden">Cat energy. Все о питании для котов</h1>
 
       <section class="food-programm">
         <h2 class="food-programm__title">Функциональное питание для котов</h2>
         <p class="food-programm__slogan">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="button button--green">Подобрать программу</a>
+        <a href="form.html" class="button button--green food-programm__button">Подобрать программу</a>
       </section>
 
       <section class="categories">
         <div class="categories__wrapper">
-          <h2 class="visually-hidden">Категории: похудение инабор массы</h2>
+          <h2 class="visually-hidden">Категории: похудение и набор массы</h2>
           <ul class="categories__list">
             <li class="categories__item categories__item--losweight">
               <h3 class="categories__title">Похудение</h3>
@@ -59,22 +57,24 @@
       </section>
 
       <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <h3 class="advantages__heading">Как это работает?</h3>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--helpful">
-            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages__item advantages__item--cooking">
-            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantages__item advantages__item--replacement">
-            <p class="advantages__description">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
-          </li>
-          <li class="advantages__item advantages__item--change">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h3 class="advantages__heading">Как это работает</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--helpful">
+              <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="advantages__item advantages__item--cooking">
+              <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="advantages__item advantages__item--replacement">
+              <p class="advantages__description">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="example">
@@ -83,51 +83,60 @@
 
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
       <ul class="example__list">
-        <li>
+        <li class="example__item example__item--weight">
           <p class="example__value">5 кг</p>
-          <p class="example__value-text">снижение веса</p>
+          <p class="example__text">снижение веса</p>
         </li>
-        <li>
-          <p class="example__field">60 дней</p>
-          <p class="example__field-text">затрачено времени</p>
+        <li class="example__item example__item--days">
+          <p class="example__value">60 дней</p>
+          <p class="example__text">затрачено времени</p>
         </li>
       </ul>
       <p class="example__result">Затраты на питание: 15 000 руб.</p>
       <div class="example__slider slider">
-        <img src="http://placehold.it/311x232" alt="Cat before">
-          <input name="toggle" id="toggle-1" class="slider__toggle-1" type="radio" checked>
-          <input name="toggle" id="toggle-2" class="slider__toggle-2" type="radio">
+        <div class="slider__image-1"></div>
+        <div class="slider__image-2"></div>
+          <input name="toggle" id="toggle-1" class="slider__toggle slider__toggle--1" type="radio" checked>
+          <input name="toggle" id="toggle-2" class="slider__toggle slider__toggle--2" type="radio">
           <div class="slider__control">
-            <p class="slider__before-text">Было</p>
-            <label for="toggle-1"></label>
-            <label for="toggle-2"></label>
-            <p class="slider__after-text">Стало</p>
+            <p class="slider__text">Было</p>
+            <div class="slider__bar">
+              <label for="toggle-1" class="slider__tog slider__tog--1"></label>
+              <label for="toggle-2" class="slider__tog slider__tog--2"></label>
+            </div>
+            <p class="slider__text">Стало</p>
           </div>
       </div>
+    </section>
+
+    <section class="contacts">
+
+      <h2 class="visually-hidden">Наши контакты</h2>
+
+      <div class="contacts__card">
+        <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
     </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__slogan">Приглашаем к сотрудничеству диллеров!</b>
-        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="page-footer__map map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
-      </div>
-      <h1 class="page-footer__title">Cat energy</h1>
+
+      <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
+
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkontakte">Мы в Вконтакте</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram">Мы в Инстаграме</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
         </a>
       </div>
     </footer>
