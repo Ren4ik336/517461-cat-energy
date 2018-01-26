@@ -2,34 +2,38 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .categories__list {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
+
 .categories__item {
   padding-left: 20px;
   padding-right: 20px;
   background-color: @bg-silver;
+
   &--losweight {
     position: relative;
     padding-top: 25px;
     padding-left: 20px;
-    &::before{
+
+    &::before {
       display: inline-block;
       vertical-align: top;
-      content: '';
+      content: "";
       background-color: @main-color;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       margin-left: 2px;
     }
+
     &::after {
       display: block;
-      content: '';
-      background: url(../img/icon-cat-slim.svg) no-repeat center center;
+      content: "";
+      background: url("../img/icon-cat-slim.svg") no-repeat center center;
       margin-left: 2px;
       width: 50px;
       height: 50px;
@@ -37,6 +41,7 @@
       top: 20px;
     }
   }
+
   &--upweight {
     position: relative;
     margin-top: 20px;
@@ -51,10 +56,11 @@
       border-radius: 50%;
       margin-left: 2px;
     }
+
     &::after {
       display: block;
-      content: '';
-      background: url(../img/icon-cat-pro.svg) no-repeat center center;
+      content: "";
+      background: url("../img/icon-cat-pro.svg") no-repeat center center;
       width: 70px;
       height: 50px;
       position: absolute;
@@ -64,6 +70,7 @@
     }
   }
 }
+
 .categories__title {
   margin: 0;
   margin-left: 16px;
@@ -74,12 +81,14 @@
   font-weight: 300;
   font-style: normal;
 }
+
 .categories__description {
   margin-top: 20px;
   font-size: 14px;
   font-family: "Arial", sans-serif;
   color: @text-color;
 }
+
 .categories__link {
   display: block;
   text-transform: uppercase;
@@ -88,20 +97,22 @@
   margin-top: 42px;
   padding-bottom: 20px;
   position: relative;
+
   &::before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     width: 240px;
     height: 1px;
     background-color: silver;
     top: -20px;
   }
+
   &::after {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
-    background: url(../img/icon-right-arrow-long.svg) no-repeat 0 0;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
     width: 24px;
     height: 11px;
     top: 3px;
