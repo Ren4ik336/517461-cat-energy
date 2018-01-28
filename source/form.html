@@ -11,22 +11,22 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" class="page-header__logo-image">
-        <img src="img/logo-mobile-header.svg" width="101" height="18" alt="logo" class="page-header__logo-text">
-      </a>
       <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи" class="main-nav__logo-image">
+          <img src="img/logo-mobile-header.svg" width="101" height="18" alt="logo" class="main-nav__logo-text">
+        </a>
+        <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор продукции</a></li>
-        </ul>
-      </div>
-    </nav>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -50,12 +50,14 @@
           </div>
         </fieldset>
         <fieldset class="questionary__field questionary__field--category">
-          <input class="questionary__toggle" id="downweight" type="radio" name="weight" checked>
-          <label class="questionary__btn" for="downweight"><span class="questionary__name">Похудение</span></label>
-          <input class="questionary__toggle" id="upweight" type="radio" name="weight">
-          <label class="questionary__btn" for="upweight"><span class="questionary__name">Набор массы</span></label>
+          <div class="questionary__box">
+            <input class="questionary__toggle" id="downweight" type="radio" name="weight" checked>
+            <label class="questionary__btn" for="downweight"><span class="questionary__name">Похудение</span></label>
+            <input class="questionary__toggle" id="upweight" type="radio" name="weight">
+            <label class="questionary__btn" for="upweight"><span class="questionary__name">Набор массы</span></label>
           <input class="questionary__toggle" id="unknown" type="radio" name="weight">
-          <label class="questionary__btn" for="unknown"><span class="questionary__name">Не знаю (нужен ваш совет)</span></label>
+            <label class="questionary__btn" for="unknown"><span class="questionary__name">Не знаю (нужен ваш совет)</span></label>
+          </div>
         </fieldset>
         <fieldset class="questionary__field questionary__field--contacts">
           <legend class="questionary__title questionary__title--1">Контактные данные (владельца кота)</legend>
@@ -74,26 +76,38 @@
         </fieldset>
         <fieldset class="questionary__field questionary__field--additionally">
           <legend class="questionary__title questionary__title--3">Дополнительно</legend>
-          <input class="questionary__toggle" id="shugare" type="checkbox">
-          <label class="questionary__checkbox" for="shugare"><span class="questionary__heading">Сахарозаменитель</span></label>
-          <input class="questionary__toggle" id="water" type="checkbox">
-          <label class="questionary__checkbox" for="water"><span class="questionary__heading">Питьевая вода</span></label>
-          <input class="questionary__toggle" id="milk" type="checkbox">
-          <label class="questionary__checkbox" for="milk"><span class="questionary__heading">Молоко</span></label>
-          <input class="questionary__toggle" id="vitamin" type="checkbox">
-          <label class="questionary__checkbox" for="vitamin"><span class="questionary__heading">Витамины</span></label>
+          <div class="questionary__wrapper">
+            <div class="questionary__line">
+              <input class="questionary__toggle" id="shugare" type="checkbox" checked>
+              <label class="questionary__checkbox" for="shugare"><span class="questionary__heading">Сахарозаменитель</span></label>
+            </div>
+            <div class="questionary__line">
+              <input class="questionary__toggle" id="water" type="checkbox">
+              <label class="questionary__checkbox" for="water"><span class="questionary__heading">Питьевая вода</span></label>
+            </div>
+            <div class="questionary__line">
+              <input class="questionary__toggle" id="milk" type="checkbox">
+              <label class="questionary__checkbox" for="milk"><span class="questionary__heading">Молоко</span></label>
+            </div>
+            <div class="questionary__line">
+              <input class="questionary__toggle" id="vitamin" type="checkbox">
+              <label class="questionary__checkbox" for="vitamin"><span class="questionary__heading">Витамины</span></label>
+            </div>
+          </div>
         </fieldset>
+        <div class="questionary__btn-field">
         <input type="submit" value="Отправить заявку" class="button button--form">
         <p class="questionary__warning">* &#8212; Обязательные поля</p>
+        </div>
       </form>
 
-    <section class="contacts">
+    <section class="contacts contacts--silver">
 
       <h2 class="visually-hidden">Наши контакты</h2>
 
-      <div class="contacts__card contacts__card--silver">
+      <div class="contacts__card">
         <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
     </section>
