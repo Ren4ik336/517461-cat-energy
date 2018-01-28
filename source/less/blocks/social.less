@@ -36,3 +36,33 @@
     height: 19px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
+    margin: 0;
+  }
+
+  .social__list {
+    margin: 0;
+    width: 124px;
+    padding-bottom: 40px;
+  }
+
+  .social__link {
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

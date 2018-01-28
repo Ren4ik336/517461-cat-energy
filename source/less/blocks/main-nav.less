@@ -11,3 +11,46 @@
 .main-nav__wrapper {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 28px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 516px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .site-list__item {
+    margin-left: 36px;
+
+    &--active {
+      border-bottom: 2px solid @main-color;
+      padding-bottom: 10px;
+    }
+  }
+
+  .site-list__link {
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

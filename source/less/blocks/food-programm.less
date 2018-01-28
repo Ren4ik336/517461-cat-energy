@@ -1,7 +1,7 @@
 .food-programm {
-  height: 503px;
+  // height: 503px;
   text-align: center;
-  background: url("../img/index-can-mobile@1x.png") no-repeat center 167px, url(../img/index-background-mobile@1x.jpg) no-repeat 0 0;
+  background: url("../img/index-can-mobile@1x.png") no-repeat center 167px, url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
 }
 
 .food-programm__title {
@@ -25,4 +25,41 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 300px;
+  margin-bottom: 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .food-programm {
+    min-height: 837px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: url("../img/index-can-mobile@1x.png") no-repeat center center;
+    // background-size: 709px 609px;
+  }
+
+  .food-programm__title {
+    color: black;
+    font-size: 60px;
+    line-height: 60px;
+    width: 415px;
+    text-align: left;
+    margin-left: 88px;
+    margin-top: 20px;
+  }
+
+  .food-programm__slogan {
+    color: black;
+    text-align: left;
+    margin-left: 88px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .food-programm__button {
+    width: 245px;
+    height: 35px;
+    margin: 44px 0 0 90px;
+    font-size: 20px;
+    padding: 17px 0 0 0;
+  }
 }

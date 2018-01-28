@@ -14,7 +14,7 @@
 .example__description {
   font-size: 14px;
   font-family: "Arial", sans-serif;
-  margin-top: 42px;
+  margin-top: 43px;
   margin-left: 1px;
 }
 
@@ -23,6 +23,7 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
@@ -51,6 +52,13 @@
       background-color: @bg-silver;
     }
   }
+
+  &--result {
+    margin-top: 37px;
+    margin-left: 47px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 }
 
 .example__value {
@@ -71,6 +79,79 @@
   font-family: "Arial", sans-serif;
   line-height: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .example {
+    min-width: 768px;
+    padding: 0 30px 0 30px;
+    padding: 0;
+    background-color: white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 68px;
+    margin-bottom: 82px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: @text-color;
+    width: 700px;
+    margin-left: 30px;
+  }
+
+  .example__list {
+    justify-content: flex-start;
+    min-width: 708px;
+    margin-left: 30px;
+    margin-top: 43px;
+  }
+
+  .example__item {
+    &--weight {
+      margin-right: 42px;
+
+      .example__text {
+        top: 60px;
+        right: 22px;
+        width: 100px;
+        background-color: white;
+      }
+    }
+
+    &--days {
+      .example__text {
+        top: 60px;
+        right: 12px;
+        width: 127px;
+        padding: 0 6px;
+        background-color: white;
+      }
+    }
+
+    &--result {
+      margin-left: 148px;
+      margin-top: 17px;
+      width: 192px;
+      text-align: right;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .example__value {
+    width: 160px;
+    height: 45px;
+    font-size: 30px;
+    padding-top: 25px;
+  }
+
+  .example__text {
+    font-size: 14px;
+  }
 
 .example__result {
   font-size: 14px;
