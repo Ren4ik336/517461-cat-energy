@@ -1,28 +1,48 @@
-.banner {
-  margin-bottom: 0px;
-}
 .banner__place {
   margin: 0 auto;
   margin-top: 40px;
   width: 280px;
   height: 289px;
-  background: url(../img/gift-photo-mobile@1x.jpg) no-repeat center center;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center center;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
+
 .banner__image {
   width: 55px;
   height: 60px;
   margin: auto;
   margin-top: 65px;
 }
+
 .banner__link {
   display: block;
   width: 165px;
   color: white;
   font-size: 16px;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   margin: auto;
   margin-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__place {
+    display: flex;
+    flex-direction: row;
+    min-width: 708px;
+    height: 200px;
+    background-size: cover;
+    margin-top: 70px;
+  }
+
+  .banner__image {
+    margin-left: 90px;
+  }
+
+  .banner__link {
+    text-align: left;
+    margin-left: 160px;
+    margin-top: 74px;
+  }
 }

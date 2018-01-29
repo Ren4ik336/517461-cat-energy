@@ -1,11 +1,14 @@
 body {
+  min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
+
 a {
   text-decoration: none;
 }
+
 .visually-hidden {
   visibility: hidden;
   margin: -1px;
@@ -13,4 +16,11 @@ a {
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 768px;
+    margin: 0 auto;
+  }
 }

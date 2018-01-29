@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,9 +21,9 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор продукции</a></li>
+          <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -91,8 +92,8 @@
           <p class="example__value">60 дней</p>
           <p class="example__text">затрачено времени</p>
         </li>
+        <li class="example__item example__item--result">Затраты на питание: 15 000 руб.</li>
       </ul>
-      <p class="example__result">Затраты на питание: 15 000 руб.</p>
       <div class="example__slider slider">
         <div class="slider__image-1"></div>
         <div class="slider__image-2"></div>
@@ -115,7 +116,7 @@
 
       <div class="contacts__card">
         <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
     </section>
