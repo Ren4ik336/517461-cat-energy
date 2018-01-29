@@ -46,10 +46,11 @@
     position: relative;
     margin-top: 20px;
     padding-top: 26px;
+
     &::before {
       display: inline-block;
       vertical-align: top;
-      content: '';
+      content: "";
       background-color: @main-color;
       width: 50px;
       height: 50px;
@@ -134,13 +135,13 @@
 
   .categories__item {
     padding-left: 53px;
+
     &--losweight {
       position: relative;
       margin-bottom: 30px;
 
       &::before {
         position: absolute;
-        right: 0;
         top: 92px;
         width: 200px;
         height: 200px;
@@ -206,5 +207,28 @@
     &::after {
       left: 130px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    min-width: 1300px;
+  }
+
+  .categories__wrapper {
+    min-width: 1220px;
+    margin: auto;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    min-width: 570px;
+    min-height: 372px;
+    padding: 0;
+    margin: 0;
   }
 }

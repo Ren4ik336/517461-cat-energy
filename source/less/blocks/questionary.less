@@ -105,8 +105,7 @@
   color: @text-color;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
-  padding-left: 14px;
-  padding-top: 11px;
+  padding-left: 15px;
   text-transform: uppercase;
 }
 
@@ -153,7 +152,7 @@
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     background-color: @main-color;
     width: 12px;
     height: 12px;
@@ -171,7 +170,7 @@
     padding-left: 45px;
     padding-top: 6px;
     display: block;
-    width: 200px;
+    width: 230px;
   }
 }
 
@@ -275,4 +274,221 @@
   font-family: "Arial", sans-serif;
   margin-bottom: -2px;
   margin-top: 14px;
+}
+
+.questionary__btn-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+@media (min-width: @tablet-width) {
+  .questionary {
+    width: 768px;
+  }
+
+  .questionary__stroke {
+    width: 633px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .questionary__input {
+    margin-left: 15px;
+    height: 50px;
+    padding: 0;
+
+    &--comment {
+      width: 629px;
+      height: 157px;
+      margin-top: 80px;
+      margin-left: 71px;
+      padding-top: 15px;
+    }
+  }
+
+  .questionary__label {
+    font-size: 20px;
+    padding-left: 4px;
+    padding-right: 2px;
+    padding-top: 2px;
+  }
+
+  .questionary__field {
+    &--info {
+      margin-top: 44px;
+
+      &::after {
+        border: 0;
+      }
+    }
+
+    &--category {
+      &::after {
+        border: 0;
+      }
+    }
+
+    &--contacts {
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+    padding-left: 17px;
+    line-height: 20px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 20px;
+    padding-left: 17px;
+  }
+
+  :-moz-placeholder {
+    font-size: 20px;
+    padding-left: 17px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 20px;
+    padding-left: 17px;
+  }
+
+  .questionary__box {
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    margin-top: 24px;
+    margin-left: 72px;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-bottom: 13px;
+  }
+
+  .questionary__btn {
+    width: 38px;
+    height: 38px;
+    // margin-bottom: 20px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .questionary__name {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 5px;
+  }
+
+  .questionary__title {
+    font-size: 36px;
+    margin-left: 70px;
+
+    &--1 {
+      padding-top: 42px;
+      padding-bottom: 80px;
+
+      &::after {
+        width: 30px;
+        left: -69px;
+        top: 56px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 145px;
+        height: 3px;
+        background-color: @main-color;
+        right: -188px;
+        top: 56px;
+      }
+    }
+
+    &--2 {
+      padding-top: 53px;
+
+      &::after {
+        width: 30px;
+        left: -69px;
+        top: 67px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 480px;
+        height: 3px;
+        background-color: @main-color;
+        left: 220px;
+        top: 67px;
+      }
+    }
+
+    &--3 {
+      padding-top: 70px;
+
+      &::after {
+        width: 30px;
+        left: -69px;
+        top: 83px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 446px;
+        height: 3px;
+        background-color: @main-color;
+        left: 252px;
+        top: 83px;
+      }
+    }
+  }
+
+  .questionary__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 540px;
+    margin-left: 71px;
+    margin-top: 26px;
+  }
+
+  .questionary__heading {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 12px;
+  }
+
+  .questionary__checkbox {
+    width: 38px;
+    height: 38px;
+  }
+
+  .questionary__line {
+    width: 196px;
+    margin-bottom: 20px;
+  }
+
+  .questionary__btn-field {
+    width: 523px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 72px;
+    margin-bottom: 39px;
+  }
+
+  .button--form {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .questionary__warning {
+    font-size: 16px;
+    margin-top: 37px;
+  }
 }

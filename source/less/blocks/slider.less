@@ -1,10 +1,11 @@
 .slider {
   width: 280px;
+  overflow: hidden;
 }
 
 .slider__image-1 {
   background: url("../img/before-mobile@1x.png") no-repeat  -20px center;
-  width: 311px;
+  width: auto;
   height: 232px;
   margin-top: 37px;
 }
@@ -64,7 +65,7 @@
 
 @media (min-width: @tablet-width) {
   .slider {
-    min-width: 708px;
+    min-width: 768px;
     position: relative;
   }
 
@@ -87,7 +88,6 @@
   }
 
   .slider__tog {
-
     &--1 {
       width: 32px;
       height: 32px;
@@ -127,7 +127,7 @@
   }
 
   .slider__image-1 {
-    background: url(../img/slide.png) no-repeat center center;
+    background: url("../img/slide.png") no-repeat center center;
     width: 768px;
     height: 631px;
     z-index: 10;
