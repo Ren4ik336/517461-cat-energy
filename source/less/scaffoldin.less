@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+br {
+  display: none;
+}
+
 .visually-hidden {
   visibility: hidden;
   margin: -1px;
@@ -23,8 +27,18 @@ a {
     min-width: 768px;
     margin: 0 auto;
   }
+
+  br {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  min-width: 1300px;
+  body {
+    min-width: 1300px;
+  }
+
+  br {
+    display: none;
+  }
 }

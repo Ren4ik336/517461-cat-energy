@@ -66,12 +66,15 @@
 @media (min-width: @tablet-width) {
   .slider {
     min-width: 768px;
+    height: 631px;
     position: relative;
+    margin-top: 86px;
+    margin-bottom: 0px;
   }
 
   .slider__control {
     margin-left: 98px;
-    margin-top: 605px;
+    margin-top: 518px;
     width: 571px;
     z-index: 100;
     position: relative;
@@ -93,7 +96,6 @@
       height: 32px;
       border-radius: 50%;
       border: 1px solid #dcdcdc;
-      position: absolute;
       top: -14px;
       position: relative;
       left: 2px;
@@ -127,11 +129,12 @@
   }
 
   .slider__image-1 {
-    background: url("../img/slide.png") no-repeat center center;
+    background: url("../img/slide.png") no-repeat 0 0;
     width: 768px;
     height: 631px;
     z-index: 10;
     position: absolute;
-    bottom: -28px;
+    margin-top: 0;
+    top: 0;
   }
 }
