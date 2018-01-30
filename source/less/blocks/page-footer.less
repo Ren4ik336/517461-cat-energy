@@ -26,7 +26,11 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    min-width: 768px;
+    width: 768px;
+  }
+
+  .page-footer__wrapper {
+    width: 768px;
     display: flex;
     justify-content: space-between;
   }
@@ -47,5 +51,27 @@
     margin-right: 30px;
     margin-top: 57px;
     margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin-left: 0;
+  }
+
+  .page-footer__copyright {
+    margin-right: 0;
+    margin-top: 45px;
   }
 }

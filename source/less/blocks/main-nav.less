@@ -11,6 +11,7 @@
   width: 191px;
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 .main-nav__logo-text {
@@ -33,6 +34,7 @@
   width: 100%;
   background: white;
   display: none;
+  z-index: 1000;
 }
 
 .main-nav__list {
@@ -77,6 +79,15 @@
     margin-top: 24px;
     margin-left: 30px;
     justify-content: space-between;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-nav__logo-image {
@@ -108,13 +119,19 @@
     font-size: 18px;
     font-weight: 300;
     border: none;
-
   }
 
   .site-list__item {
     padding: 0;
     border: none;
     margin-left: 35px;
+  }
+
+  .site-list__link {
+    &--active {
+      border-bottom: 2px solid @main-color;
+      padding-bottom: 5px;
+    }
   }
 }
 
