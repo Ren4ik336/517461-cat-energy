@@ -444,12 +444,15 @@
   }
 
   .questionary__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 540px;
-    margin-left: 71px;
-    margin-top: 26px;
+    &--line3{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 540px;
+      margin-left: 71px;
+      margin-top: 26px;
+    }
+
   }
 
   .questionary__heading {
@@ -487,4 +490,122 @@
     font-size: 16px;
     margin-top: 37px;
   }
+
+  .questionary__tel-icon {
+    margin-left: 350px;
+  }
+
+  .questionary__mail-icon {
+    margin-left: 350px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .questionary {
+    width: 1300px;
+  }
+
+  .questionary__wrapper {
+    &--line1 {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &--line2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--line3 {
+      width: 1220px;
+      margin: 0;
+      margin-left: 40px;
+      margin-top: 28px;
+    }
+  }
+
+  .questionary__line {
+    width: 245px;
+
+  }
+
+  .questionary__field {
+    &--info {
+      width: 570px;
+      margin-left: 40px;
+    }
+
+    &--category {
+      width: auto;
+    }
+  }
+
+  .questionary__stroke {
+    width: 570px;
+  }
+
+  .questionary__label {
+    padding: 0;
+  }
+
+  .questionary__box {
+    width: 570px;
+    margin-left: 80px;
+  }
+
+  .questionary__input {
+    margin-left: 17px;
+    font-size: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+
+    &--comment {
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 1218px;
+    }
+  }
+
+  .questionary__title {
+    &--1 {
+      margin-left: 40px;
+      padding-top: 18px;
+    }
+
+    &--2 {
+      margin-left: 40px;
+    }
+
+    &--3 {
+      margin-left: 40px;
+      padding-top: 72px;
+    }
+  }
+
+  .questionary__tel-icon {
+    margin-left: 284px;
+  }
+
+  .questionary__mail-icon {
+    margin-left: 286px;
+  }
+
+  .questionary__btn-field {
+    width: 830px;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 27px;
+    margin-bottom: 83px;
+  }
+
+  .button--form {
+    width: 570px;
+    margin: 0;
+  }
+
+  .questionary__warning {
+    margin: auto 0;
+  }
+}
+
+

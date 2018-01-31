@@ -115,6 +115,7 @@
   .main-nav__list {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     font-size: 18px;
     font-weight: 300;
@@ -165,9 +166,23 @@
 
   .main-nav__list {
     font-size: 20px;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    padding-bottom: 20px;
   }
 
   .site-list__link {
     color: #ffffff;
+
+    &--inner {
+      color: #111111;
+    }
+
+    &--active {
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+    }
   }
 }
