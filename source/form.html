@@ -21,53 +21,59 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--inner">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active site-list__link--inner" href="form.html">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
+      <div class="page-main__wrapper">
 
-      <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
+        <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
 
-      <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="questionary" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="questionary__field questionary__field--info">
-          <div class="questionary__stroke">
-            <label class="questionary__label" for="name">Имя:*</label>
-            <input class="questionary__input questionary__input--name" id="name" type="text" placeholder="Барсик">
-          </div>
-          <div class="questionary__stroke">
-            <label class="questionary__label" for="weight">Вес (кг):*</label>
-            <input class="questionary__input questionary__input--weight" id="weight" type="text" placeholder="7">
-          </div>
-          <div class="questionary__stroke">
-            <label class="questionary__label" for="age">Возраст (лет):</label>
-            <input class="questionary__input questionary__input--age" id="age" type="text" placeholder="7">
-          </div>
-        </fieldset>
-        <fieldset class="questionary__field questionary__field--category">
-          <div class="questionary__box">
-            <input class="questionary__toggle" id="downweight" type="radio" name="weight" checked>
-            <label class="questionary__btn" for="downweight"><span class="questionary__name">Похудение</span></label>
-            <input class="questionary__toggle" id="upweight" type="radio" name="weight">
-            <label class="questionary__btn" for="upweight"><span class="questionary__name">Набор массы</span></label>
-          <input class="questionary__toggle" id="unknown" type="radio" name="weight">
-            <label class="questionary__btn" for="unknown"><span class="questionary__name">Не знаю (нужен ваш совет)</span></label>
-          </div>
-        </fieldset>
+        <div class="questionary__wrapper questionary__wrapper--line1">
+          <fieldset class="questionary__field questionary__field--info">
+            <div class="questionary__stroke">
+              <label class="questionary__label" for="name">Имя:*</label>
+              <input class="questionary__input questionary__input--name" id="name" type="text" placeholder="Барсик">
+            </div>
+            <div class="questionary__stroke">
+              <label class="questionary__label" for="weight">Вес (кг):*</label>
+              <input class="questionary__input questionary__input--weight" id="weight" type="text" placeholder="7">
+            </div>
+            <div class="questionary__stroke">
+              <label class="questionary__label" for="age">Возраст (лет):</label>
+              <input class="questionary__input questionary__input--age" id="age" type="text" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="questionary__field questionary__field--category">
+            <div class="questionary__box">
+              <input class="questionary__toggle" id="downweight" type="radio" name="weight" checked>
+              <label class="questionary__btn" for="downweight"><span class="questionary__name">Похудение</span></label>
+              <input class="questionary__toggle" id="upweight" type="radio" name="weight">
+              <label class="questionary__btn" for="upweight"><span class="questionary__name">Набор массы</span></label>
+            <input class="questionary__toggle" id="unknown" type="radio" name="weight">
+              <label class="questionary__btn" for="unknown"><span class="questionary__name">Не знаю (нужен ваш совет)</span></label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="questionary__field questionary__field--contacts">
           <legend class="questionary__title questionary__title--1">Контактные данные (владельца кота)</legend>
-          <div class="questionary__stroke">
-            <label class="questionary__label" for="email">E-mail:*<i class="questionary__mail-icon"></i></label>
-            <input class="questionary__input questionary__input--email" id="email" type="email" placeholder="kuklachev@gmail.com">
-          </div>
-          <div class="questionary__stroke">
-            <label class="questionary__label" for="telephone">Телефон:*<i class="questionary__tel-icon"></i><i class="questionary__tel-icon"></i></label>
-            <input class="questionary__input questionary__input--telephone" id="telephone" type="tel" placeholder="8(960)900-60-90">
+          <div class="questionary__wrapper questionary__wrapper--line2">
+            <div class="questionary__stroke">
+              <label class="questionary__label" for="email">E-mail:*<i class="questionary__mail-icon"></i></label>
+              <input class="questionary__input questionary__input--email" id="email" type="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="questionary__stroke">
+              <label class="questionary__label" for="telephone">Телефон:*<i class="questionary__tel-icon"></i><i class="questionary__tel-icon"></i></label>
+              <input class="questionary__input questionary__input--telephone" id="telephone" type="tel" placeholder="8(960)900-60-90">
+            </div>
           </div>
         </fieldset>
         <fieldset class="questionary__field questionary__field--comment">
@@ -76,7 +82,7 @@
         </fieldset>
         <fieldset class="questionary__field questionary__field--additionally">
           <legend class="questionary__title questionary__title--3">Дополнительно</legend>
-          <div class="questionary__wrapper">
+          <div class="questionary__wrapper questionary__wrapper--line3">
             <div class="questionary__line">
               <input class="questionary__toggle" id="shugare" type="checkbox" checked>
               <label class="questionary__checkbox" for="shugare"><span class="questionary__heading">Сахарозаменитель</span></label>
@@ -105,9 +111,11 @@
 
       <h2 class="visually-hidden">Наши контакты</h2>
 
-      <div class="contacts__card">
-        <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+      <div class="contacts__wrapper">
+        <div class="contacts__card">
+          <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+        </div>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
     </section>
@@ -116,20 +124,22 @@
 
     <footer class="page-footer">
 
-      <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
-        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
+          </a>
+        </div>
       </div>
     </footer>
 

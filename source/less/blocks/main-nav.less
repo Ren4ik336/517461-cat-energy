@@ -33,8 +33,27 @@
 .main-nav__wrapper {
   width: 100%;
   background: white;
-  display: none;
   z-index: 1000;
+}
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+.main-nav--closed .site-list__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background: url("../img/icon-close.svg") no-repeat center center;
+  width: 18px;
+  height: 18px;
 }
 
 .main-nav__list {
@@ -115,6 +134,7 @@
   .main-nav__list {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     font-size: 18px;
     font-weight: 300;
@@ -165,9 +185,23 @@
 
   .main-nav__list {
     font-size: 20px;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    padding-bottom: 20px;
   }
 
   .site-list__link {
     color: #ffffff;
+
+    &--inner {
+      color: #111111;
+    }
+
+    &--active {
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+    }
   }
 }

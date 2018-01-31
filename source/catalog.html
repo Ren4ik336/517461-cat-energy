@@ -21,9 +21,9 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--inner">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active site-list__link--inner" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="form.html">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -31,9 +31,9 @@
 
     <main class="page-main">
 
-    <h1 class="page-main__title">Каталог продукции</h1>
-
     <section class="catalog">
+
+      <h1 class="page-main__title">Каталог продукции</h1>
 
       <h2 class="visually-hidden">Наши товары</h2>
 
@@ -206,6 +206,7 @@
 
       <h2 class="additional__title">Дополнительные товары</h2>
 
+      <div class="additional__wrapper">
       <div class="additional__list">
         <!-- additional item1 -->
         <div class="additional__item">
@@ -244,6 +245,7 @@
         <div class="additional__item">
           <h3 class="additional__item-title">Витамины</h3>
           <table class="additional__table">
+            <tbody></tbody>
             <tr>
               <td class="additional__value">1 упаковка (30 г)</td>
               <td class="additional__field">300 Р.</td>
@@ -252,15 +254,12 @@
           <a href="#" class="button button--green button--additional">Заказать</a>
         </div>
       </div>
-    </section>
-
-    <section class="banner">
-
-      <h2 class="visually-hidden">Наши акции</h2>
-
-      <div class="banner__place">
-        <img class="banner__image" src="img/icon-gift.svg" alt="Gift" width="55" height="60">
-        <a href="#" class="banner__link">Закажите все <br>и получите чехол для кота в подарок!</a>
+      <div class="additional__banner banner">
+        <div class="banner__place">
+          <img class="banner__image" src="img/icon-gift.svg" alt="Gift" width="55" height="60">
+          <a href="#" class="banner__link">Закажите все <br>и получите чехол для кота в подарок!</a>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -268,9 +267,11 @@
 
       <h2 class="visually-hidden">Наши контакты</h2>
 
-      <div class="contacts__card">
-        <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+      <div class="contacts__wrapper">
+        <div class="contacts__card">
+          <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
+        </div>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
     </section>
@@ -279,20 +280,22 @@
 
     <footer class="page-footer">
 
-      <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
 
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
-        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logotype" class="copyright__image">
+          </a>
+        </div>
       </div>
     </footer>
 
