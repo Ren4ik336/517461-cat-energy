@@ -9,13 +9,14 @@
   font-size: 36px;
   font-weight: 300;
   margin: 0;
+  padding-bottom: 43px;
 }
 
 .example__description {
   font-size: 14px;
   font-family: "Arial", sans-serif;
-  margin-top: 43px;
-  margin-left: 1px;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .example__list {
@@ -35,8 +36,8 @@
     .example__text {
       padding: 0 10px;
       position: absolute;
-      top: 46px;
-      right: 25px;
+      top: 57px;
+      right: 26px;
       background-color: @bg-silver;
     }
   }
@@ -47,15 +48,16 @@
     .example__text {
       padding: 0 10px;
       position: absolute;
-      top: 46px;
+      top: 57px;
       right: 25px;
       background-color: @bg-silver;
     }
   }
 
   &--result {
-    margin-top: 37px;
-    margin-left: 47px;
+    padding-top: 36px;
+    padding-left: 47px;
+    margin: 0;
     font-size: 14px;
     text-transform: uppercase;
   }
@@ -74,6 +76,7 @@
 }
 
 .example__text {
+  margin: 0;
   width: 55px;
   font-size: 12px;
   font-family: "Arial", sans-serif;
@@ -83,16 +86,20 @@
 @media (min-width: @tablet-width) {
   .example {
     min-width: 768px;
-    padding: 0 30px 0 30px;
     padding: 0;
     background-color: white;
   }
 
+  .example__wrapper {
+    margin-top: 67px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
   .example__title {
     font-size: 60px;
-    margin-left: 30px;
-    margin-top: 68px;
-    margin-bottom: 82px;
+    margin: 0;
+    padding-bottom: 83px;
   }
 
   .example__description {
@@ -100,15 +107,13 @@
     line-height: 24px;
     color: @text-color;
     width: 700px;
-    margin-left: 30px;
+    padding-bottom: 53px;
   }
 
   .example__list {
     justify-content: flex-start;
     width: 708px;
-    margin-left: 30px;
     margin-right: 30px;
-    margin-top: 43px;
   }
 
   .example__item {
@@ -116,7 +121,7 @@
       margin-right: 42px;
 
       .example__text {
-        top: 60px;
+        top: 64px;
         right: 22px;
         width: 100px;
         background-color: white;
@@ -125,7 +130,7 @@
 
     &--days {
       .example__text {
-        top: 60px;
+        top: 64px;
         right: 12px;
         width: 127px;
         padding: 0 6px;
@@ -135,7 +140,7 @@
 
     &--result {
       margin-left: auto;
-      margin-top: 17px;
+      padding-top: 7px;
       width: 192px;
       text-align: right;
       font-size: 20px;
@@ -148,6 +153,7 @@
     height: 45px;
     font-size: 30px;
     padding-top: 25px;
+    margin: 0;
   }
 
   .example__text {
@@ -172,7 +178,7 @@
   .example__title {
     margin: 0;
     margin-top: -114px;
-    margin-bottom: 122px;
+    padding-bottom: 165px;
     margin-right: 205px;
     margin-left: auto;
   }
@@ -180,15 +186,15 @@
   .example__wrapper {
     display: flex;
     flex-direction: column;
-    height: 461px;
-    margin-top: auto;
+    height: 462px;
+    margin: 0;
     background-color: @bg-silver;
     flex-grow: 1;
     width: 560px;
   }
 
   .example__wrapper-2 {
-    height: 461px;
+    height: 462px;
     background-color: #eaeaea;
     position: relative;
     flex-grow: 2.5;
@@ -198,7 +204,8 @@
   .example__description {
     margin-left: auto;
     width: 432px;
-    margin-right: 95px;
+    margin-right: 97px;
+    padding-bottom: 68px;
   }
 
   .example__list {
@@ -207,15 +214,21 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: 162px;
+    margin-right: 164px;
   }
 
   .example__item {
     &--result {
       margin: 0;
-      margin-top: 55px;
-      width: 365px;
+      width: 370px;
       text-align: left;
+      padding: 0;
+      padding-top: 56px;
+      padding-left: 5px;
+    }
+
+    .example__text {
+      background-color: @bg-silver;
     }
   }
 
