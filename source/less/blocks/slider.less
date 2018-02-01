@@ -4,7 +4,7 @@
 }
 
 .slider__image-1 {
-  background: url("../img/before-mobile@1x.png") no-repeat  -20px center;
+  background: url("../img/before-mobile@1x.png") no-repeat  -20px -3px;
   width: auto;
   height: 232px;
   margin-top: 37px;
@@ -17,7 +17,7 @@
 .slider__control {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 198px;
   margin-left: 43px;
   margin-top: 23px;
   padding-bottom: 20px;
@@ -140,7 +140,17 @@
 
 @media (min-width: @desktop-width) {
   .slider {
-    left: 0px;
-    margin-top: -170px;
+    margin-top: -190px;
+    height: 652px;
+  }
+
+  .slider__image-1 {
+    background: url("../img/slide2.png") no-repeat -641px 0;
+    height: 652px;
+  }
+
+  .slider__control {
+    margin-left: 120px;
+    margin-top: 538px;
   }
 }

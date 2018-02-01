@@ -67,16 +67,20 @@
 }
 
 .questionary__input {
+  padding-left: 15px;
   flex-grow: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   margin-left: 15px;
   border: 1px solid #e6e6e6;
   height: 41px;
 }
 
 .questionary__input--comment {
+  padding-top: 12px;
   margin-top: 35px;
-  width: 278px;
-  height: 145px;
+  width: 263px;
+  height: 133px;
   resize: none;
   margin-left: 0;
 }
@@ -105,7 +109,6 @@
   color: @text-color;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
-  padding-left: 15px;
   text-transform: uppercase;
 }
 
@@ -113,7 +116,6 @@
   color: @text-color;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
-  padding-left: 15px;
   text-transform: uppercase;
 }
 
@@ -121,7 +123,6 @@
   color: @text-color;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
-  padding-left: 15px;
   text-transform: uppercase;
 }
 
@@ -129,7 +130,6 @@
   color: @text-color;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
-  padding-left: 15px;
   text-transform: uppercase;
 }
 
@@ -214,7 +214,7 @@
   }
 
   &--3 {
-    padding-top: 24px;
+    padding-top: 26px;
     padding-bottom: 34px;
 
     &::after {
@@ -279,6 +279,7 @@
 .questionary__btn-field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -293,6 +294,8 @@
   }
 
   .questionary__input {
+    padding-left: 17px;
+    font-size: 20px;
     margin-left: 15px;
     height: 50px;
     padding: 0;
@@ -331,23 +334,19 @@
 
   ::-webkit-input-placeholder {
     font-size: 20px;
-    padding-left: 17px;
     line-height: 20px;
   }
 
   ::-moz-placeholder {
     font-size: 20px;
-    padding-left: 17px;
   }
 
   :-moz-placeholder {
     font-size: 20px;
-    padding-left: 17px;
   }
 
   :-ms-input-placeholder {
     font-size: 20px;
-    padding-left: 17px;
   }
 
   .questionary__box {
@@ -363,7 +362,6 @@
   .questionary__btn {
     width: 38px;
     height: 38px;
-    // margin-bottom: 20px;
 
     &::before {
       width: 18px;
@@ -607,5 +605,3 @@
     margin: auto 0;
   }
 }
-
-
