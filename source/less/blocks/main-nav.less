@@ -11,7 +11,20 @@
   width: 191px;
   display: flex;
   justify-content: space-between;
-  z-index: 1000;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__logo-image {
+  width: 33px;
+  height: 38px;
 }
 
 .main-nav__logo-text {
@@ -70,25 +83,17 @@
     margin-top: 24px;
     margin-left: 30px;
     justify-content: space-between;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
   }
 
   .main-nav__logo-image {
-    width: 70px;
-    height: 57px;
+    width: auto;
+    height: auto;
   }
 
   .main-nav__logo-text {
     width: 84px;
     height: 16px;
+    display: none;
   }
 
   .main-nav__toggle {
@@ -127,8 +132,8 @@
   }
 
   .main-nav__logo-image {
-    width: 70px;
-    height: 59px;
+    // width: 70px;
+    // height: 59px;
   }
 
   .main-nav__logo-text {
@@ -137,6 +142,7 @@
   }
 
   .main-nav__wrapper {
+    width: 570px;
     margin-right: 40px;
     margin-top: 77px;
     background-color: transparent;
