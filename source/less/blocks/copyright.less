@@ -12,8 +12,25 @@
   color: @text-color;
 }
 
+.copyright__link {
+  order: 2;
+}
+
 .copyright__image {
   margin-top: 10px;
+}
+
+.copyright__image:hover,
+.copyright__image:focus {
+  fill: @main-color;
+}
+
+.copyright__image:active {
+  opacity: 0.3;
+}
+
+.copyright__link:active ~ .copyright__text {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

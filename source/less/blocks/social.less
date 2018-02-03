@@ -15,26 +15,32 @@
   margin-left: 72px;
 }
 
-.social__link {
-  display: block;
 
-  &--vkontakte {
-    background: url("../img/icon-vk-mobile.svg") no-repeat center center;
-    width: 22px;
-    height: 12px;
-  }
+.social__vkontakte:hover,
+.social__vkontakte:focus {
+  fill: @main-color;
+}
 
-  &--instagram {
-    background: url("../img/icon-insta-mobile.svg") no-repeat center center;
-    width: 16px;
-    height: 16px;
-  }
+.social__vkontakte:active {
+  opacity: 0.3;
+ }
 
-  &--facebook {
-    background: url("../img/icon-fb-mobile.svg") no-repeat center center;
-    width: 10px;
-    height: 19px;
-  }
+.social__instagram:hover,
+.social__instagram:focus {
+  fill: @main-color;
+}
+
+.social__instagram:active {
+  opacity: 0.3;
+}
+
+.social__facebook:hover,
+.social__facebook:focus {
+  fill: @main-color;
+}
+
+.social__facebook:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
