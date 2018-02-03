@@ -57,6 +57,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .questionary__label {
@@ -74,6 +75,35 @@
   margin-left: 15px;
   border: 1px solid #e6e6e6;
   height: 41px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #444444;
+  }
+
+  &:focus ~ .questionary__tel-icon {
+    fill: @main-color;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:invalid ~ .questionary__tel-icon {
+    fill: #ff8282;
+  }
+
+  &:focus ~.questionary__mail-icon {
+    fill: @main-color;
+  }
+
+  &:invalid ~ .questionary__mail-icon {
+    fill: #ff8282;
+  }
 }
 
 .questionary__input--comment {
@@ -87,22 +117,18 @@
 
 .questionary__mail-icon {
   position: absolute;
-  display: block;
-  background: url("../img/icon-mail.svg") no-repeat center center;
   width: 17px;
   height: 13px;
   left: 247px;
-  top: 3px;
+  top: 18px;
 }
 
 .questionary__tel-icon {
   position: absolute;
-  display: block;
-  background: url("../img/icon-phone.svg") no-repeat center center;
   width: 20px;
   height: 20px;
   left: 247px;
-  top: 0;
+  top: 13px;
 }
 
 ::-webkit-input-placeholder {
@@ -148,6 +174,15 @@
   border: 1px solid #e6e6e6;
   position: relative;
   margin-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #bbbbbb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     position: absolute;
@@ -240,6 +275,14 @@
   position: relative;
   margin-bottom: 12px;
 
+  &:hover {
+    border: 1px solid #bbbbbb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -294,11 +337,11 @@
   }
 
   .questionary__input {
+    padding: 0;
     padding-left: 17px;
     font-size: 20px;
     margin-left: 15px;
     height: 50px;
-    padding: 0;
 
     &--comment {
       width: 629px;
@@ -475,7 +518,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-left: 72px;
-    margin-bottom: 39px;
+    margin-bottom: 65px;
   }
 
   .button--form {
@@ -490,17 +533,22 @@
   }
 
   .questionary__tel-icon {
-    margin-left: 350px;
+    left: 597px;
+    top: 16px;
   }
 
   .questionary__mail-icon {
-    margin-left: 350px;
+    left: 597px;
+    top: 19px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .questionary {
     width: 1300px;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .questionary__wrapper {
@@ -549,6 +597,7 @@
   .questionary__box {
     width: 570px;
     margin-left: 80px;
+    border-right: 1px solid #e6e6e6;
   }
 
   .questionary__input {
@@ -567,24 +616,61 @@
     &--1 {
       margin-left: 40px;
       padding-top: 18px;
+
+      &::after {
+        top: 31px;
+        width: 70px;
+        left: -110px;
+      }
+
+      &::before {
+        top: 31px;
+        width: 778px;
+        right: auto;
+        left: 550px;
+      }
     }
 
     &--2 {
       margin-left: 40px;
+
+      &::after {
+        width: 70px;
+        left: -110px;
+      }
+
+      &::before {
+        width: 1111px;
+        right: auto;
+        left: 218px;
+      }
     }
 
     &--3 {
       margin-left: 40px;
       padding-top: 72px;
+
+      &::after {
+        width: 70px;
+        left: -110px;
+        top: 86px;
+      }
+
+      &::before {
+        width: 1077px;
+        right: auto;
+        left: 250px;
+        top: 86px;
+      }
     }
   }
 
   .questionary__tel-icon {
-    margin-left: 284px;
+    left: 534px;
   }
 
   .questionary__mail-icon {
-    margin-left: 286px;
+    left: 536px;
   }
 
   .questionary__btn-field {

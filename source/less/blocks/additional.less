@@ -74,10 +74,24 @@
     font-size: 36px;
     position: relative;
     margin-left: 37px;
-    margin-top: 78px;
+    margin-top: 76px;
 
     &::after {
       border-bottom: none;
+      content: "";
+      position: absolute;
+      right: -30px;
+      top: 11px;
+      width: 326px;
+      height: 3px;
+      padding: 0;
+      background-color: @main-color;
+    }
+
+    &::before {
+      width: 30px;
+      right: auto;
+      left: -69px;
     }
   }
 
@@ -85,7 +99,7 @@
     display: flex;
     flex-direction: column;
     width: 708px;
-    margin: 50px auto 0 auto;
+    margin: 87px auto 0 auto;
   }
 
   .additional__item {
@@ -141,13 +155,23 @@
   .additional__wrapper {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 87px;
     margin-bottom: 85px;
   }
 
   .additional__title {
-    margin-top: 88px;
+    margin-top: 83px;
     margin-left: 40px;
+
+    &::after {
+      width: 958px;
+      right: -70px;
+    }
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   .additional__list {

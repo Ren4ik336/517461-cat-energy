@@ -69,14 +69,16 @@
     height: 631px;
     position: relative;
     margin-top: 86px;
+    display: flex;
+    flex-direction: column;
   }
 
   .slider__control {
     margin-left: 98px;
-    margin-top: 518px;
     width: 571px;
     z-index: 100;
-    position: relative;
+    position: absolute;
+    bottom: 29px;
   }
 
   .slider__bar {
@@ -127,14 +129,44 @@
     padding-bottom: 5px;
   }
 
+  .slider__slides {
+    width: 768px;
+    height: 462px;
+    background: linear-gradient(to right, @bg-silver 50%, #eaeaea 50%);
+    position: relative;
+    margin-top: auto;
+  }
+
   .slider__image-1 {
-    background: url("../img/slide.png") no-repeat 0 0;
+    background: none;
+    background: url("../img/before-tablet@1x.png") no-repeat 45px 0;
+    clip: rect(auto, 384px, auto, auto);
     width: 768px;
     height: 631px;
     z-index: 10;
     position: absolute;
     margin-top: 0;
-    top: 0;
+    bottom: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png") no-repeat;
+    }
+  }
+
+  .slider__image-2 {
+    background: none;
+    background: url("../img/after-tablet@1x.png") no-repeat 45px 0;
+    clip: rect(auto, auto, auto, 384px);
+    width: 768px;
+    height: 631px;
+    z-index: 10;
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png") no-repeat;
+    }
   }
 }
 
@@ -144,13 +176,34 @@
     height: 652px;
   }
 
+  .slider__slides {
+    background: linear-gradient(to right, @bg-silver 53%, #eaeaea 47%);
+  }
+
   .slider__image-1 {
-    background: url("../img/slide2.png") no-repeat -641px 0;
-    height: 652px;
+    background: url("../img/before-desktop@1x.png") no-repeat 45px 0;
+    left: -4px;
+    bottom: 21px;
+    clip: rect(auto, 410px, auto, auto);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-desktop@2x.png") no-repeat;
+    }
+  }
+
+  .slider__image-2 {
+    background: url("../img/after-desktop@1x.png") no-repeat 45px 0;
+    left: -4px;
+    clip: rect(auto, auto, auto, 410px);
+    bottom: 21px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png") no-repeat;
+    }
   }
 
   .slider__control {
-    margin-left: 120px;
-    margin-top: 538px;
+    margin-left: 119px;
+    bottom: 30px;
   }
 }

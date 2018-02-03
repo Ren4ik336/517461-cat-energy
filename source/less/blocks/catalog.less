@@ -20,6 +20,10 @@
   }
 }
 
+.catalog__image {
+  height: 144px;
+}
+
 .button--catalog {
   width: 280px;
   font-size: 16px;
@@ -129,13 +133,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    margin-top: 0;
   }
 
   .catalog__item {
-    min-width: 324px;
-    min-height: 570px;
-    background-color: @bg-silver;
+    width: 324px;
+    height: 571px;
+    background: linear-gradient(to top, @bg-silver 75%, #ffffff 25%);
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     text-align: center;
 
@@ -148,11 +154,27 @@
     font-size: 20px;
     line-height: 20px;
     min-width: 135px;
+    margin-top: 35px;
+  }
+
+  .catalog__image {
+    height: 270px;
+    bottom: 0;
+    position: relative;
+  }
+
+  .catalog__item picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
 
   .catalog__properties {
     width: 250px;
     margin: auto;
+    margin-top: 25px;
+    margin-bottom: 8px;
   }
 
   .catalog__value,
@@ -163,6 +185,8 @@
 
   .catalog__line {
     border-bottom: 1px solid silver;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   .button--catalog {
@@ -172,8 +196,9 @@
 
   .catalog__item-add {
     min-width: 322px;
-    min-height: 568px;
+    height: 430px;
     border: 1px solid @bg-silver;
+    margin-top: 141px;
 
     &::after {
       border-bottom: none;
@@ -183,6 +208,27 @@
   .catalog__item-button {
     width: 60px;
     height: 60px;
+  }
+
+  .catalog__item-button {
+    background: url("../img/icon-plus.svg") no-repeat center center;
+    background-size: 60px 60px;
+    margin-top: 53px;
+  }
+
+  .catalog__button-add-text {
+    font-size: 20px;
+    width: 135px;
+    margin: auto;
+    margin-top: 52px;
+  }
+
+  .catalog__add-slogan {
+    font-size: 16px;
+    width: 170px;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 87px;
   }
 }
 
@@ -196,6 +242,7 @@
     justify-content: flex-start;
     width: 1300px;
     margin-left: 0;
+    margin-top: 2px;
   }
 
   .catalog__item {
@@ -203,6 +250,7 @@
     width: 245px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 3px;
   }
 
   .catalog__item-add {
@@ -213,7 +261,7 @@
   }
 
   .catalog__properties {
-    width: 200px;
+    width: 170px;
   }
 
   .button--catalog {
