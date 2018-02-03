@@ -74,6 +74,19 @@
   margin-left: 15px;
   border: 1px solid #e6e6e6;
   height: 41px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #444444;
+  }
+
+  // &:invalid {
+  //   border: 1px solid #ff8282;
+  // }
 }
 
 .questionary__input--comment {
@@ -567,15 +580,52 @@
     &--1 {
       margin-left: 40px;
       padding-top: 18px;
+
+      &::after {
+        top: 31px;
+        width: 70px;
+        left: -110px;
+      }
+
+      &::before {
+        top: 31px;
+        width: 778px;
+        right: auto;
+        left: 550px;
+      }
     }
 
     &--2 {
       margin-left: 40px;
+
+      &::after {
+        width: 70px;
+        left: -110px;
+      }
+
+      &::before {
+        width: 1111px;
+        right: auto;
+        left: 218px;
+      }
     }
 
     &--3 {
       margin-left: 40px;
       padding-top: 72px;
+
+      &::after {
+        width: 70px;
+        left: -110px;
+        top: 86px;
+      }
+
+      &::before {
+        width: 1077px;
+        right: auto;
+        left: 250px;
+        top: 86px;
+      }
     }
   }
 
