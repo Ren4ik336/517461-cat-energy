@@ -170,7 +170,12 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    min-width: 1300px;
+    background: linear-gradient(to right, @bg-silver 30%, #eaeaea 70%);
+  }
+
+  .example__center {
+    width: 1300px;
+    margin: auto;
     display: flex;
     margin-top: 200px;
   }
@@ -189,16 +194,15 @@
     height: 462px;
     margin: 0;
     background-color: @bg-silver;
-    flex-grow: 1;
-    width: 560px;
+    width: 570px;
   }
 
   .example__wrapper-2 {
     height: 462px;
     background-color: #eaeaea;
     position: relative;
-    flex-grow: 2.5;
-    width: 600px;
+    flex-grow: 1;
+    width: 690px;
   }
 
   .example__description {
