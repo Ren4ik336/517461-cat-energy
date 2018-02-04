@@ -44,6 +44,7 @@
   height: 6px;
   background-color: white;
   border-radius: 3px;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
 
   &::before {
     display: flex;
@@ -56,6 +57,15 @@
     transition: 0.4s;
     cursor: pointer;
   }
+}
+
+.slider__tog:hover,
+.slider__tog:focus {
+  box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slider__tog:active {
+  border: 1px solid @main-color;
 }
 
 .slider__toggle--1:checked ~ .slider__control > .slider__bar > .slider__tog--1::before,

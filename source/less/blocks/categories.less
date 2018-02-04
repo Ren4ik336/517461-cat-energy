@@ -119,8 +119,26 @@
     width: 24px;
     height: 11px;
     top: 3px;
+    left: 120px;
+  }
+}
+
+.categories__link:hover,
+.categories__link:focus {
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+    width: 33px;
+    height: 11px;
+    top: 3px;
     right: 140px;
   }
+}
+
+.categories__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
