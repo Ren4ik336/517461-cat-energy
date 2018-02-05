@@ -1,5 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
+var navToggleClose = document.querySelector('.main-nav__toggle-close')
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -12,3 +13,7 @@ navToggle.addEventListener('click', function() {
     main-nav.classList.remove('main-nav--opened')
   }
 });
+
+navToggleClose.addEventListener('click', function() {
+  navMain.classList.remove('main-nav--opened');
+})

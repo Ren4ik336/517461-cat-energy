@@ -181,28 +181,32 @@
   }
 
   .example__title {
+    width: 365px;
     margin: 0;
-    margin-top: -114px;
-    padding-bottom: 165px;
-    margin-right: 205px;
-    margin-left: auto;
+    margin-top: -137px;
+    padding-bottom: 146px;
+    margin-left: 40px;
+    line-height: 60px;
   }
 
   .example__wrapper {
     display: flex;
     flex-direction: column;
-    height: 462px;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 462px;
     margin: 0;
     background-color: @bg-silver;
     width: 570px;
   }
 
   .example__wrapper-2 {
-    height: 462px;
+    min-height: 462px;
     background-color: #eaeaea;
     position: relative;
     flex-grow: 1;
     width: 690px;
+    background: linear-gradient(to right, @bg-silver 407px, #eaeaea 323px);
   }
 
   .example__description {
@@ -229,6 +233,7 @@
       padding: 0;
       padding-top: 56px;
       padding-left: 5px;
+      padding-bottom: 20px;
     }
 
     .example__text {

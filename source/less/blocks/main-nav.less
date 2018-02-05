@@ -7,7 +7,7 @@
 .main-nav__logo {
   margin-left: 20px;
   margin-top: 11px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   width: 191px;
   display: flex;
   justify-content: space-between;
@@ -31,6 +31,17 @@
   margin-top: 13px;
 }
 
+.main-nav__toggle-close {
+  background: url("../img/icon-close.svg") no-repeat center center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  display: none;
+  cursor: pointer;
+}
+
 .main-nav__toggle {
   border: none;
   background: url("../img/icon-mobile-menu.svg") no-repeat 0 0;
@@ -41,15 +52,7 @@
   position: absolute;
   right: 20px;
   overflow: hidden;
-
-  &::after {
-    display: block;
-    content: "";
-    background: url("../img/icon-close.svg") no-repeat center center;
-    width: 18px;
-    height: 18px;
-    display: none;
-  }
+  cursor: pointer;
 }
 
 .main-nav__wrapper {
@@ -69,6 +72,14 @@
   width: 100%;
   z-index: 1000;
   display: block;
+}
+
+.main-nav--opened .main-nav__toggle-close {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: none;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -176,11 +187,12 @@
   }
 
   .main-nav__list {
-    width: 50%;
+    width: 40%;
     font-size: 20px;
     justify-content: flex-end;
     position: absolute;
     right: 0;
     z-index: 1000;
+    margin-right: 40px;
   }
 }

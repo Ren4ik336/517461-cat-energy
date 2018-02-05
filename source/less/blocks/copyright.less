@@ -35,12 +35,37 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 164px;
+    min-width: 192px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .copyright__image {
+    padding-left: 22px;
+  }
+
+  .copyright__text {
+    padding-top: 2px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .copyright {
+    min-width: auto;
+    width: 245px;
     margin-right: 0;
+    display: flex;
+    align-items: center;
   }
+
+  .copyright__image {
+    margin-top: 0;
+  }
+
+  .copyright__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
 }
