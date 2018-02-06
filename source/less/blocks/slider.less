@@ -8,6 +8,15 @@
   width: auto;
   height: 232px;
   margin-top: 37px;
+  display: none;
+}
+
+.slider__image-2 {
+  background: url("../img/after-mobile@1x.png") no-repeat  -20px -3px;
+  width: auto;
+  height: 232px;
+  margin-top: 37px;
+  display: none;
 }
 
 .slider__toggle {
@@ -63,14 +72,20 @@
   transform: scale(1);
 }
 
+.slider__toggle--1:checked ~ .slider__slides > .slider__image-1,
+.slider__toggle--2:checked ~ .slider__slides > .slider__image-2 {
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .slider {
-    min-width: 768px;
+    width: 768px;
     height: 631px;
     position: relative;
     margin-top: 86px;
     display: flex;
     flex-direction: column;
+    overflow: hedden;
   }
 
   .slider__control {
@@ -101,6 +116,7 @@
       position: relative;
       left: 2px;
       cursor: pointer;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
 
       &::before {
         display: block;
@@ -123,6 +139,15 @@
     }
   }
 
+  .slider__tog:hover,
+  .slider__tog:focus {
+    box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__tog:active {
+    border: 1px solid @main-color;
+  }
+
   .slider__text {
     font-size: 20px;
     border-bottom: 1px solid silver;
@@ -138,7 +163,6 @@
   }
 
   .slider__image-1 {
-    background: none;
     background: url("../img/before-tablet@1x.png") no-repeat 45px 0;
     clip: rect(auto, 384px, auto, auto);
     width: 768px;
@@ -147,6 +171,7 @@
     position: absolute;
     margin-top: 0;
     bottom: 0;
+    display: block;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/before-tablet@2x.png") no-repeat;
@@ -154,7 +179,6 @@
   }
 
   .slider__image-2 {
-    background: none;
     background: url("../img/after-tablet@1x.png") no-repeat 45px 0;
     clip: rect(auto, auto, auto, 384px);
     width: 768px;
@@ -163,6 +187,7 @@
     position: absolute;
     margin-top: 0;
     bottom: 0;
+    display: block;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/after-tablet@2x.png") no-repeat;
@@ -172,6 +197,7 @@
 
 @media (min-width: @desktop-width) {
   .slider {
+    width: 690px;
     margin-top: -190px;
     height: 652px;
   }

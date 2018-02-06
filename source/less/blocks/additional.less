@@ -164,8 +164,10 @@
     margin-left: 40px;
 
     &::after {
-      width: 958px;
-      right: -70px;
+      position: absolute;
+      width: 880px;
+      right: 5px;
+      overflow: hidden;
     }
 
     &::before {
@@ -184,12 +186,11 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     width: auto;
-    height: auto;
     height: 71px;
     border: none;
     border-top: 1px solid @border-color;
     border-bottom: 1px solid @border-color;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
   }
 
@@ -220,7 +221,6 @@
   }
 
   .button--additional {
-    min-width: auto;
     min-width: 245px;
     margin: auto;
     margin-right: 0;

@@ -8,33 +8,57 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 127px;
   position: relative;
-  margin-left: 72px;
+  min-width: 220px;
 }
 
-.social__link {
-  display: block;
+.social__item {
+  padding: 0 18px;
+  width: 22px;
+}
 
-  &--vkontakte {
-    background: url("../img/icon-vk-mobile.svg") no-repeat center center;
-    width: 22px;
-    height: 12px;
-  }
+.social__vkontakte {
+  width: 22px;
+  height: 12px;
+}
 
-  &--instagram {
-    background: url("../img/icon-insta-mobile.svg") no-repeat center center;
-    width: 16px;
-    height: 16px;
-  }
+.social__instagram {
+  width: 16px;
+  height: 16px;
+}
 
-  &--facebook {
-    background: url("../img/icon-fb-mobile.svg") no-repeat center center;
-    width: 10px;
-    height: 19px;
-  }
+.social__facebook {
+  width: 10px;
+  height: 19px;
+}
+
+.social__vkontakte:hover,
+.social__vkontakte:focus {
+  fill: @main-color;
+}
+
+.social__vkontakte:active {
+  opacity: 0.3;
+}
+
+.social__instagram:hover,
+.social__instagram:focus {
+  fill: @main-color;
+}
+
+.social__instagram:active {
+  opacity: 0.3;
+}
+
+.social__facebook:hover,
+.social__facebook:focus {
+  fill: @main-color;
+}
+
+.social__facebook:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,33 +69,45 @@
 
   .social__list {
     margin: 0;
-    width: 124px;
+    min-width: auto;
+    width: 324px;
+    flex-wrap: wrap;
     padding-bottom: 40px;
   }
 
-  .social__link {
-    &--vkontakte {
-      width: 30px;
-      height: 16px;
-    }
+  .social__item {
+    padding: 0 14px;
+    width: auto;
+  }
 
-    &--instagram {
-      width: 23px;
-      height: 23px;
-    }
+  .social__vkontakte {
+    width: 30px;
+    height: 16px;
+  }
 
-    &--facebook {
-      width: 14px;
-      height: 28px;
-    }
+  .social__instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__facebook {
+    width: 14px;
+    height: 28px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .social {
-    padding-top: 53px;
+    width: 730px;
+    padding: 0;
+    margin: 0;
   }
+
   .social__list {
-    margin-left: 20px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 }

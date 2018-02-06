@@ -3,7 +3,7 @@
   margin-top: 40px;
   margin-bottom: 33px;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center center;
   text-align: center;
   display: flex;
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     min-width: 708px;
-    height: 200px;
+    min-height: 200px;
     background-size: cover;
     margin-top: 70px;
     margin-bottom: 75px;
@@ -43,9 +43,12 @@
   }
 
   .banner__link {
+    min-width: 165px;
+    max-width: 385px;
     text-align: left;
     margin-left: 160px;
     margin-top: 74px;
+    padding-bottom: 20px;
   }
 }
 
@@ -57,7 +60,6 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: 289px;
-
   }
 
   .banner__image {
@@ -69,5 +71,6 @@
     margin: 0 auto;
     margin-top: 65px;
     text-align: center;
+    padding-bottom: 20px;
   }
 }
