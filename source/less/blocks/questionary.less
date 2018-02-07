@@ -91,10 +91,6 @@
     border: 1px solid #444444;
   }
 
-  &:focus ~ .questionary__tel-icon {
-    fill: @main-color;
-  }
-
   &:invalid {
     border: 1px solid #ff8282;
   }
@@ -103,12 +99,16 @@
     fill: #ff8282;
   }
 
-  &:focus ~ .questionary__mail-icon {
-    fill: @main-color;
-  }
-
   &:invalid ~ .questionary__mail-icon {
     fill: #ff8282;
+  }
+
+  &:focus ~ .questionary__tel-icon {
+    fill: #68b738;
+  }
+
+  &:focus ~ .questionary__mail-icon {
+    fill: #68b738;
   }
 }
 
@@ -617,7 +617,7 @@
 
   .questionary__field {
     &--info {
-      width: 570px;
+      width: 629px;
     }
 
     &--category {
@@ -665,7 +665,7 @@
 
     &--3 {
       padding-left: 0;
-      padding-top: 66px;
+      padding-top: 64px;
     }
   }
 
@@ -692,6 +692,6 @@
   }
 
   .questionary__warning {
-    margin: auto 0;
+    margin-top: 16px;
   }
 }
