@@ -53,6 +53,9 @@
           </div>
           <div class="box-2">
             <picture class="food-programm__image food-programm__image--cup">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
               <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat energy">
@@ -147,8 +150,8 @@
 
       <div class="contacts__wrapper">
         <div class="contacts__card">
-          <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+          <b class="contacts__slogan">Приглашаем <br class="contacts__br"> к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br class="contacts__br-address"><br class="contacts__br-addres">Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
@@ -164,16 +167,16 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte">
-                <svg class="social__vkontakte"><use xlink:href="img/sprite.svg#vkontakte"></use></svg><span class="visually-hidden">Мы в Вконтакте</span>
+              <a href="#" class="social__link">
+                <svg class="social__vkontakte" width="22" height="12"><use xlink:href="img/sprite.svg#vkontakte"></use></svg><span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram">
-                <svg class="social__instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg><span class="visually-hidden">Мы в Инстаграме</span>
+              <a href="#" class="social__link">
+                <svg class="social__instagram" width="16" height="16"><use xlink:href="img/sprite.svg#instagram"></use></svg><span class="visually-hidden">Мы в Инстаграме</span>
               </a>
             </li>
-            <li class="social__item"><a href="#" class="social__link social__link--facebook"><svg class="social__facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+            <li class="social__item"><a href="#" class="social__link"><svg class="social__facebook" width="10" height="19"><use xlink:href="img/sprite.svg#facebook"></use></svg><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
