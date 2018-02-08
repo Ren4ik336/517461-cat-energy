@@ -16,6 +16,7 @@
 
 .social__item {
   padding: 0 18px;
+  width: 23px;
 }
 
 .social__vkontakte {
@@ -33,30 +34,34 @@
   height: 19px;
 }
 
-.social__vkontakte:hover,
-.social__vkontakte:focus {
+.social__link {
+  display: block;
+}
+
+.social__link:hover .social__vkontakte,
+.social__link:focus .social__vkontakte {
   fill: @main-color;
 }
 
-.social__vkontakte:active {
+.social__link:active .social__vkontakte {
   opacity: 0.3;
 }
 
-.social__instagram:hover,
-.social__instagram:focus {
+.social__link:hover .social__instagram,
+.social__link:focus .social__instagram {
   fill: @main-color;
 }
 
-.social__instagram:active {
+.social__link:active .social__instagram {
   opacity: 0.3;
 }
 
-.social__facebook:hover,
-.social__facebook:focus {
+.social__link:hover .social__facebook,
+.social__link:focus .social__facebook {
   fill: @main-color;
 }
 
-.social__facebook:active {
+.social__link:active .social__facebook {
   opacity: 0.3;
 }
 
@@ -76,6 +81,7 @@
 
   .social__item {
     padding: 0 14px;
+    width: auto;
   }
 
   .social__vkontakte {
