@@ -16,6 +16,10 @@
   </head>
   <body>
 
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a href="index.html" class="main-nav__logo">
@@ -80,13 +84,13 @@
             <div class="questionary__stroke">
               <label class="questionary__label" for="email">E-mail:*</label>
               <input class="questionary__input questionary__input--email" id="email" type="email" placeholder="kuklachev@gmail.com" required><svg class="questionary__mail-icon" width="17" height="13">
-                <use xlink:href="img/sprite.svg#mail-icon"></use>
+                <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
             <div class="questionary__stroke">
               <label class="questionary__label" for="telephone">Телефон:*</label>
               <input class="questionary__input questionary__input--telephone" id="telephone" type="tel" placeholder="8(960)900-60-90" required><svg class="questionary__tel-icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#tel-icon"></use>
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -145,21 +149,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte">
-                <svg class="social__vkontakte"><use xlink:href="img/sprite.svg#vkontakte"></use></svg><span class="visually-hidden">Мы в Вконтакте</span>
+              <a href="#" class="social__link">
+                <svg class="social__vkontakte" width="22" height="12"><use xlink:href="#icon-vk"></use></svg><span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram">
-                <svg class="social__instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg><span class="visually-hidden">Мы в Инстаграме</span>
+              <a href="#" class="social__link">
+                <svg class="social__instagram" width="16" height="16"><use xlink:href="#icon-insta"></use></svg><span class="visually-hidden">Мы в Инстаграме</span>
               </a>
             </li>
-            <li class="social__item"><a href="#" class="social__link social__link--facebook"><svg class="social__facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+            <li class="social__item"><a href="#" class="social__link"><svg class="social__facebook" width="10" height="19"><use xlink:href="#icon-fb"></use></svg><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-            <svg class="copyright__image" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy-logo"></use></svg>
+            <svg class="copyright__image" width="27" height="34"><use xlink:href="#icon-logo-htmlacademy"></use></svg>
           </a>
           <p class="copyright__text">HTML Academy</p>
         </div>
