@@ -36,14 +36,6 @@ body {
   padding: 0;
 }
 
-.categories__br {
-  display: none;
-}
-
-.contacts__br-address {
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -59,33 +51,4 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: @tablet-width) {
-  body {
-    min-width: 768px;
-    margin: 0 auto;
-  }
-
-  .categories__br {
-    display: block;
-  }
-
-  .contacts__br-address {
-    display: block;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    min-width: 1300px;
-  }
-
-  .categories__br {
-    display: none;
-  }
-
-  br {
-    display: block;
-  }
 }
