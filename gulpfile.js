@@ -43,39 +43,39 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
-gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-      ]))
+//gulp.task("images", function() {
+//  return gulp.src("source/img/**/*.{png,jpg,svg}")
+//    .pipe(imagemin([
+//      imagemin.optipng({optimizationLevel: 3}),
+//      imagemin.jpegtran({progressive: true}),
+//      imagemin.svgo()
+//      ]))
 
-  .pipe(gulp.dest("source/img"));
-  });
+//  .pipe(gulp.dest("source/img"));
+//  });
 
-gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
-  });
+//gulp.task("webp", function() {
+//  return gulp.src("source/img/**/*.{png,jpg}")
+//    .pipe(webp({quality: 90}))
+//    .pipe(gulp.dest("source/img"));
+//  });
 
-gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
-  });
+//gulp.task("sprite", function() {
+//  return gulp.src("source/img/icon-*.svg")
+//    .pipe(svgstore({
+//      inlineSvg: true
+//    }))
+//    .pipe(rename("sprite.svg"))
+//    .pipe(gulp.dest("source/img"));
+//  });
 
-gulp.task("html", function() {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("source"));
-  });
+//gulp.task("html", function() {
+//  return gulp.src("source/*.html")
+//    .pipe(posthtml([
+//      include()
+//    ]))
+//    .pipe(gulp.dest("source"));
+//  });
 
 
 gulp.task("copy", function() {
@@ -116,6 +116,23 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("build/img"));
   });
 
+gulp.task("images", function() {
+  return gulp.src("build/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+      ]))
+
+  .pipe(gulp.dest("build/img"));
+  });
+
+gulp.task("webp", function() {
+  return gulp.src("build/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+  });
+
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -130,6 +147,8 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "sprite",
+    "images",
+    "webp",
     "html",
     done
     );
