@@ -7,14 +7,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  padding-bottom: 25px;
 
   &::after {
     display: block;
     content: "";
-    width: 100%;
+    width: auto;
     height: 1px;
     border-bottom: 1px solid #ededed;
     padding-top: 23px;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
   }
 }
 
@@ -63,14 +69,19 @@
 
 .catalog__item-add {
   text-align: center;
+  position: relative;
+  padding-bottom: 25px;
 
   &::after {
     display: block;
     content: "";
-    width: 100%;
-    height: 1px;
+    width: auto;
     border-bottom: 1px solid #ededed;
     padding-top: 23px;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
   }
 }
 
@@ -154,6 +165,7 @@
   .catalog__image {
     height: 270px;
     display: flex;
+    align-items: flex-end;
   }
 
   .catalog__item picture {
