@@ -20,34 +20,37 @@
     </div>
 
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a href="index.html" class="main-nav__logo">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/icon-logo-mobile.svg" alt="Логотип Кэт энерджи" class="main-nav__logo-image">
-          </picture>
-          <img src="img/logo-mobile-header.svg" width="101" height="18" alt="logo" class="main-nav__logo-text">
-        </a>
-        <div class="main-nav__toggle-close"></div>
-        <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--inner">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active site-list__link--inner site-list__link--green" href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="form.html">Подбор программы</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper container">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a href="index.html" class="main-nav__logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/icon-logo-mobile.svg" alt="Логотип Кэт энерджи" class="main-nav__logo-image">
+            </picture>
+            <img src="img/logo-mobile-header.svg" width="101" height="18" alt="logo" class="main-nav__logo-text">
+          </a>
+          <div class="main-nav__toggle-close"></div>
+          <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--inner">Главная</a></li>
+              <li class="site-list__item site-list__item--active"><a class="site-list__link site-list__link--active site-list__link--inner site-list__link--green" href="catalog.html">Каталог продукции</a></li>
+              <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="form.html">Подбор программы</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
     <section class="catalog">
-
       <h1 class="page-main__title">Каталог продукции</h1>
+      <div class="catalog__container container">
+
 
       <h2 class="visually-hidden">Наши товары</h2>
 
@@ -277,13 +280,16 @@
           <a href="#" class="button button--silver button--catalog">Показать все</a>
         </div>
       </div>
+
+      </div>
     </section>
 
     <section class="additional">
-
+      <div class="additional__title-wrapper">
       <h2 class="additional__title">Дополнительные товары</h2>
+      </div>
+      <div class="additional__wrapper container">
 
-      <div class="additional__wrapper">
       <div class="additional__list">
         <!-- additional item1 -->
         <div class="additional__item">
@@ -346,8 +352,8 @@
 
       <div class="contacts__wrapper">
         <div class="contacts__card">
-          <b class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</b>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+          <b class="contacts__slogan">Приглашаем <br class="contacts__br"> к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br class="contacts__br-address"><br class="contacts__br-address">Санкт-Петербург</p>
         </div>
       </div>
       <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a4709ad25b7233e92955723599acc8010a9d836d055d88d10ff166d11a9ceb4&amp;source=constructor" width="320" height="362"></iframe>
@@ -357,7 +363,7 @@
 
     <footer class="page-footer">
 
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <img class="page-footer__logo" src="img/logo-footer.svg" alt="logo" width="128" height="24">
 
         <div class="page-footer__social social">
