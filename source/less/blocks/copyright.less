@@ -1,9 +1,8 @@
 .copyright {
   display: flex;
-  width: 280px;
-  margin-right: 20px;
-  margin-left: 20px;
+  min-width: 280px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__text {
@@ -30,7 +29,6 @@
 }
 
 .copyright__image {
-  margin-top: 10px;
   fill: #666666;
   width: 27px;
   height: 34px;
@@ -38,17 +36,16 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    min-width: 192px;
-    justify-content: flex-end;
+    min-width: auto;
+    width: 162px;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
   }
 
-  .copyright__image {
-    padding-left: 22px;
-  }
-
   .copyright__text {
-    padding-top: 2px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -56,18 +53,13 @@
   .copyright {
     min-width: auto;
     width: 245px;
-    margin-right: 0;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
   }
 
   .copyright__image {
     margin-top: 0;
-  }
-
-  .copyright__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
+    margin-left: 23px;
   }
 }
