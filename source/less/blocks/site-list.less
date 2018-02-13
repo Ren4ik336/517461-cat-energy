@@ -1,6 +1,16 @@
 .site-list__item {
   padding: 24px;
   border-bottom: 1px solid #ededed;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid #ededed;
+}
+
+.site-list__item:last-child {
+  border-bottom: 0;
 }
 
 .site-list__link {
@@ -18,10 +28,15 @@
 
 @media (min-width: @tablet-width) {
   .site-list__item {
+    margin: 0;
     padding: 0;
-    border: none;
     margin-left: 35px;
+    border: none;
     padding-bottom: 20px;
+  }
+
+  .site-list__item:first-child {
+    border-top: 0;
   }
 
   .site-list__link {
@@ -36,6 +51,7 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     padding-bottom: 20px;
+    margin-left: 35px;
   }
 
   .site-list__link {

@@ -9,8 +9,13 @@
     right: 0;
     width: 100%;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat center center;
+    background-color: @main-color;
     background-size: cover;
     min-height: 305px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg") no-repeat center center;
+    }
   }
 }
 
@@ -28,11 +33,15 @@
   .page-header {
     &--promo::after {
       display: block;
-      width: calc(47%);
+      width: 47%;
       min-height: 696px;
       top: 0;
       background: url("../img/index-background-desktop@1x.jpg") no-repeat center center;
       background-size: cover;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg") no-repeat center center;
+      }
     }
   }
 }
