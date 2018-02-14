@@ -1,21 +1,24 @@
 .page-main {
-  width: 320px;
+  max-width: 100%;
+  overflow: hidden;
   margin: 0 auto;
 }
 
 .page-main__title {
   font-weight: 300;
   font-size: 36px;
-  padding-left: 20px;
+  line-height: 36px;
   margin: 0;
-  margin-top: 38px;
-  padding-bottom: 47px;
+  margin-top: 27px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #ededed;
+  position: relative;
+  padding-left: 20px;
 }
 
 .page-main__title--form {
   border-bottom: none;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
 }
 
 .page-main__slogan {
@@ -29,7 +32,8 @@
 
 @media (min-width: @tablet-width) {
   .page-main {
-    width: 768px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .page-main__title {
@@ -39,7 +43,7 @@
     line-height: 60px;
     margin: 45px 0 0 0;
     border: none;
-    padding-bottom: 42px;
+    padding-bottom: 23px;
   }
 
   .page-main__slogan {
@@ -49,11 +53,16 @@
     padding-left: 70px;
     min-width: 325px;
   }
+
+  .page-main__title--form {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .page-main__wrapper {
@@ -62,8 +71,8 @@
   }
 
   .page-main__title {
-    padding-left: 40px;
     margin-top: 62px;
+    padding-left: 40px;
   }
 
   .page-main__slogan {

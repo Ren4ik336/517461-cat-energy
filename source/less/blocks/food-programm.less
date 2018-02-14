@@ -1,7 +1,6 @@
 .food-programm {
   text-align: center;
   position: relative;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
 }
 
 .food-programm__title {
@@ -70,10 +69,6 @@
   }
 
   .food-programm__image {
-    &--cat {
-      display: none;
-    }
-
     &--cup {
       bottom: -5px;
     }
@@ -93,36 +88,42 @@
   .food-programm {
     width: 100%;
     margin: 0 auto;
-    min-height: 696px;
+    min-height: 569px;
     display: flex;
-    margin-top: -127px;
+    z-index: 1000;
+    position: relative;
   }
 
   .food-programm__wrapper {
     display: flex;
-    width: 100%;
+    justify-content: flex-start;
+    width: 1220px;
+    margin: 0 auto;
     margin-top: 0;
+    z-index: 1;
   }
 
   .food-programm__title {
+    text-align: left;
+    margin: 0;
     margin-left: auto;
-    margin-right: 95px;
-    margin-bottom: 42px;
-    margin-top: 225px;
+    margin-right: 75px;
+    margin-bottom: 44px;
+    margin-top: 95px;
     padding-top: 0;
     z-index: 1000;
   }
 
   .button--green {
     margin-left: auto;
-    margin-right: 265px;
+    margin-right: 245px;
     margin-top: 0;
   }
 
   .food-programm__slogan {
     min-width: 429px;
     margin-left: auto;
-    margin-right: 80px;
+    margin-right: 61px;
     margin-top: 0;
     margin-bottom: 54px;
     padding-left: 70px;
@@ -132,29 +133,16 @@
     &--cup {
       padding: 0;
       left: auto;
-      right: 326px;
+      right: 260px;
       bottom: 50px;
     }
   }
 
-  .box-1 {
+  .food-programm__promo {
     width: 570px;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-  }
-
-  .box-2 {
-    min-height: 696px;
-    width: 590px;
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat right center;
-    background-color: @main-color;
-    background-size: cover;
-    margin-left: 20px;
-    flex-grow: 1;
   }
 }

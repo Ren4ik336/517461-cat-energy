@@ -141,6 +141,10 @@
   opacity: 0.3;
 }
 
+.categories__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .categories {
     min-width: 768px;
@@ -148,7 +152,7 @@
   }
 
   .categories__wrapper {
-    width: 708px;
+    min-width: 708px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -232,6 +236,10 @@
     &::after {
       margin-left: 23px;
     }
+  }
+
+  .categories__br {
+    display: block;
   }
 }
 
@@ -319,5 +327,9 @@
     margin: 0;
     margin-top: auto;
     padding-left: 53px;
+  }
+
+  .categories__br {
+    display: none;
   }
 }
