@@ -15,4 +15,3 @@ navToggle.addEventListener('click', function() {
 navToggleClose.addEventListener('click', function() {
   navMain.classList.remove('main-nav--opened');
 });
-
